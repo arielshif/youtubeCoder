@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Logger</title>
+    <style>
+        .buttonfield { display: flex; width: 100%; flex-wrap: wrap; flex-direction: row; gap: 10px; }
+        body { font-family: Arial, sans-serif; width: 220px; padding: 10px; }
+        button { display: block; width: auto; margin: 5px 0; padding: 3px; text-wrap: auto; }
+        textarea, input { width: 100%; margin-top: 5px; padding: 5px; }
+        button.recording { background-color: #ff4a4a; color: white; animation: pulse 1.5s infinite; }
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.7; } 100% { opacity: 1; } }
+    </style>
+</head>
+<body>
+    <h3>Log Event</h3>
+    <label for="coder">Coder Name:</label>
+    <input type="text" id="coder" placeholder="Enter your name">
+    
+    <label for="notes">Notes:</label>
+    <textarea id="notes" placeholder="Add notes (optional)"></textarea>
+    <div class="buttonfield">
+        <button class="interval-event" data-code="abortion">Abortion</button>
+        <button class="interval-event" data-code="ad">Ad Read</button>
+        <button class="interval-event" data-code="campaign">Campaign/Finance</button>
+        <button class="interval-event" data-code="climate">Climate</button>
+        <button class="interval-event" data-code="econtax">Economy/Taxes</button>
+        <button class="interval-event" data-code="electionsdemocracy">Election Integrity/Democracy</button>
+        <button class="interval-event" data-code="familypersonal">Family/Personal</button>
+        <button class="interval-event" data-code="gender">Gender</button>
+        <button class="interval-event" data-code="guns">Guns</button>
+        <button class="interval-event" data-code="immigration">Immigration</button>
+        <button class="interval-event" data-code="international">International Affairs</button>
+        <button class="interval-event" data-code="healthcare">Healthcare</button>
+        <button class="interval-event" data-code="lgbtq">LGBTQ</button>
+        <button class="interval-event" data-code="patriotism">Patriotism</button>
+        <button class="interval-event" data-code="race">Race</button>
+        <button class="interval-event" data-code="religion">Religion</button>
+        <button class="interval-event" data-code="sportsculture">Sports/Pop Culture</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
